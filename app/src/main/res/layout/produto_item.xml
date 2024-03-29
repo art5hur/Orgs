@@ -1,3 +1,9 @@
+<!--
+    * Este arquivo de layout representa a interface do usuário para exibir informações sobre um produto.
+    * Ele contém três TextViews para exibir o nome, descrição e valor do produto.
+    * O layout é construído usando ConstraintLayout para facilitar o posicionamento dos elementos.
+    -->
+
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"

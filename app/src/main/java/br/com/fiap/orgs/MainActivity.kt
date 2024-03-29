@@ -9,21 +9,28 @@ import carreiras.com.github.orgs.model.Produto
 import carreiras.com.github.orgs.ui.recyclerview.adapter.ListaProdutosAdapter
 import java.math.BigDecimal
 
-
+/**
+ * Classe MainActivity representa a classe principal do app.
+ * Ela herda de ComponentActivity, que é uma classe fornecida pelo framework Android Jetpack.
+ * Esta atividade exibe uma lista de produtos em um RecyclerView.
+ */
 class MainActivity : Activity() {
+
+    /**
+     * Método onCreate é chamado quando a atividade é criada. É sobrescrito o método onCreate(),
+     * que é um método de ciclo de vidade uma atividade no Android.
+     * Inicializa a interface do usuário e configura o RecyclerView para exibir a lista de produtos.
+
+    O Bundle é usado para armazenar e passar dados entre componentes do Android,
+    como atividades (Activity), fragmentos (Fragment), serviços (Service), etc.
+    O Bundle é frequentemente utilizado para transferir informações entre diferentes partes
+    do aplicativo ou entre diferentes atividades.
+     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Binding: processo de vinculação do código fonte com o arquivo de layout.
-//        val nome = findViewById<TextView>(R.id.nome)
-//        nome.setText("Cesta de frutas") ou
-//        nome.text = "Cesta de frutas"
-//        val descricao = findViewById<TextView>(R.id.descricao)
-//        descricao.text = "Laranja, manga e uva"
-//        val valor = findViewById<TextView>(R.id.valor)
-//        valor.text = "19.99"
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.adapter = ListaProdutosAdapter(
